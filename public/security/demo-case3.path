@@ -1,0 +1,24 @@
+Start Node:5        <br/>
+Path:[5, 4, 3, 2, 1] <br/>
+<br/>
+Start Node:6         <br/> 
+Path:[6, 4, 3, 2, 1] <br/>
+<br/>
+Start Node:12
+Shortest Path:[12, 4, 3, 2, 1]<br/> 
+All Paths:[12, 4, 3, 2, 1] <br/>
+          [12, 11, 10, 9, 1] <br/>
+<br/>
+Start Node:7 <br/>
+Path:[7, 2, 1] <br/>
+<br/>
+Start Node:8  <br/>
+Path:[8, 2, 1] <br/>
+<br/>
+Start Node:13  <br/>
+Path:[13, 9, 1] <br/>
+<br/>
+Start Node:14   <br/>
+Path:[14, 9, 1] <br/>
+<br/>
+

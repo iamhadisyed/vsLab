@@ -1,0 +1,442 @@
+{
+  "scan": {
+    "time": 1492143483,
+    "type": "nmap -A -O -oX output1.xml 192.168.1.3 192.168.1.4 192.168.1.5 192.168.1.6 192.168.1.8 192.168.1.9"
+  },
+  "systems": [
+    {
+      "vendor": "",
+      "services": [
+        {
+          "name": "ssh",
+          "protocol": "tcp",
+          "reason": "reset",
+          "state": "closed",
+          "port": 22,
+          "banner": "",
+          "vulnerabilities": []
+        }
+      ],
+      "status": "up",
+      "hostnames": [],
+      "mac": "FA:16:3E:BD:CF:F1",
+      "distance": 1,
+      "ip": "192.168.1.3"
+    },
+    {
+      "vendor": "",
+      "services": [
+        {
+          "name": "http",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.4.18",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 80,
+          "banner": "product: Apache httpd version: 2.4.18 extrainfo: (Ubuntu)",
+          "vulnerabilities": []
+        }
+      ],
+      "status": "up",
+      "hostnames": [],
+      "cpes": [],
+      "mac": "FA:16:3E:07:7D:DA",
+      "distance": 1,
+      "ip": "192.168.1.4"
+    },
+    {
+      "vendor": "",
+      "services": [
+        {
+          "name": "ftp",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:vsftpd:vsftpd:2.3.4",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 21,
+          "banner": "product: vsftpd version: 2.3.4 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "name": "ssh",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:4.7p1",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 22,
+          "banner": "product: OpenSSH version: 4.7p1 Debian 8ubuntu1 extrainfo: protocol 2.0 ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "name": "telnet",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:linux:linux_kernel",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 23,
+          "banner": "product: Linux telnetd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "name": "smtp",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postfix:postfix",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 25,
+          "banner": "product: Postfix smtpd hostname:  metasploitable.localdomain",
+          "vulnerabilities": []
+        },
+        {
+          "name": "domain",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:isc:bind:9.4.2",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 53,
+          "banner": "product: ISC BIND version: 9.4.2",
+          "vulnerabilities": []
+        },
+        {
+          "name": "http",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.2.8",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 80,
+          "banner": "product: Apache httpd version: 2.2.8 extrainfo: (Ubuntu) DAV/2",
+          "vulnerabilities": []
+        },
+        {
+          "name": "rpcbind",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 111,
+          "banner": "version: 2 extrainfo: RPC #100000",
+          "vulnerabilities": []
+        },
+        {
+          "name": "netbios-ssn",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 139,
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "name": "netbios-ssn",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 445,
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "name": "exec",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:netkit:netkit",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 512,
+          "banner": "product: netkit-rsh rexecd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "name": "login",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 513,
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "name": "tcpwrapped",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 514,
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "name": "java-rmi",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 1099,
+          "banner": "product: Java RMI Registry hostname: localhost",
+          "vulnerabilities": []
+        },
+        {
+          "name": "shell",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 1524,
+          "banner": "product: Metasploitable root shell",
+          "vulnerabilities": []
+        },
+        {
+          "name": "nfs",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 2049,
+          "banner": "version: 2-4 extrainfo: RPC #100003",
+          "vulnerabilities": []
+        },
+        {
+          "name": "ftp",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:proftpd:proftpd:1.3.1",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 2121,
+          "banner": "product: ProFTPD version: 1.3.1 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "name": "mysql",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:mysql:mysql:5.0.51a-3ubuntu5",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 3306,
+          "banner": "product: MySQL version: 5.0.51a-3ubuntu5",
+          "vulnerabilities": []
+        },
+        {
+          "name": "postgresql",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postgresql:postgresql:8.3",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 5432,
+          "banner": "product: PostgreSQL DB version: 8.3.0 - 8.3.7",
+          "vulnerabilities": []
+        },
+        {
+          "name": "vnc",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 5900,
+          "banner": "product: VNC extrainfo: protocol 3.3",
+          "vulnerabilities": []
+        },
+        {
+          "name": "X11",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 6000,
+          "banner": "extrainfo: access denied",
+          "vulnerabilities": []
+        },
+        {
+          "name": "irc",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:unrealircd:unrealircd",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 6667,
+          "banner": "product: Unreal ircd hostname: irc.Metasploitable.LAN",
+          "vulnerabilities": []
+        },
+        {
+          "name": "ajp13",
+          "protocol": "tcp",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 8009,
+          "banner": "product: Apache Jserv extrainfo: Protocol v1.3",
+          "vulnerabilities": []
+        },
+        {
+          "name": "http",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:coyote_http_connector:1.1",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 8180,
+          "banner": "product: Apache Tomcat/Coyote JSP engine version: 1.1",
+          "vulnerabilities": []
+        }
+      ],
+      "status": "up",
+      "hostnames": [],
+      "cpes": [],
+      "mac": "FA:16:3E:3E:88:6F",
+      "distance": 1,
+      "ip": "192.168.1.5"
+    },
+    {
+      "vendor": "",
+      "services": [
+        {
+          "name": "ssh",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:6.6.1",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 22,
+          "banner": "product: OpenSSH version: 6.6.1 extrainfo: protocol 2.0",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-5161"
+            }
+          ]
+        },
+        {
+          "name": "http",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:redhat:cockpit",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 9090,
+          "banner": "product: Cockpit management console ostype: Linux",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2013-2566"
+            }
+          ]
+        }
+      ],
+      "status": "up",
+      "hostnames": [],
+      "cpes": [],
+      "mac": "FA:16:3E:B1:11:55",
+      "distance": 1,
+      "ip": "192.168.1.6"
+    },
+    {
+      "vendor": "",
+      "services": [
+        {
+          "name": "http",
+          "protocol": "tcp",
+          "cpe": "cpe:/a:microsoft:iis:7.5",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 80,
+          "banner": "product: Microsoft IIS httpd version: 7.5 ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 135,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "netbios-ssn",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows_98",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 139,
+          "banner": "product: Microsoft Windows 98 netbios-ssn ostype: Windows 98",
+          "vulnerabilities": []
+        },
+        {
+          "name": "microsoft-ds",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows_10",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 445,
+          "banner": "product: Microsoft Windows 10 microsoft-ds ostype: Windows 10",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49152,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49153,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49154,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49155,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49156,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "name": "msrpc",
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "reason": "syn-ack",
+          "state": "open",
+          "port": 49159,
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        }
+      ],
+      "status": "up",
+      "hostnames": [],
+      "cpes": [],
+      "mac": "FA:16:3E:0A:FD:22",
+      "distance": 1,
+      "ip": "192.168.1.8"
+    },
+    {
+      "vendor": "",
+      "services": [],
+      "status": "up",
+      "hostnames": [],
+      "mac": "FA:16:3E:1F:60:05",
+      "distance": 1,
+      "ip": "192.168.1.9"
+    }
+  ],
+  "enhanced": {
+    "time": 1492143484
+  }
+}

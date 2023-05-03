@@ -1,0 +1,64 @@
+vulProperty('CVE-2008-5161',remoteExploit,privEscalation).
+
+vulProperty('CVE-2013-2566',remoteExploit,privEscalation).
+
+vulExists('192.168.1.9','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.8','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.6','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.4','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.4','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.3','CVE-1999-0524',mac_os).
+
+vulExists('192.168.1.6','CVE-2008-5161',openssh).
+
+vulExists('192.168.1.6','CVE-2013-2566',safari).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-1999-0524',l).
+
+cvss('CVE-2008-5161',h).
+
+cvss('CVE-2013-2566',h).
+
+networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser).
+
+networkServiceInfo('192.168.1.6',safari,tcp,'9090',someUser).
+
+networkScan('192.168.1.6',rlogin,tcp,'513', someUser).
+networklogin('192.168.1.4',rlogin,tcp,'513',someUser).
+
+inCompetent('192.168.1.9_victim').
+hasAccount('192.168.1.9_victim', '192.168.1.9', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.9', _)).
+inCompetent('192.168.1.8_victim').
+hasAccount('192.168.1.8_victim', '192.168.1.8', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.8', _)).
+inCompetent('192.168.1.6_victim').
+hasAccount('192.168.1.6_victim', '192.168.1.6', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.6', _)).
+inCompetent('192.168.1.4_victim').
+hasAccount('192.168.1.4_victim', '192.168.1.4', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.4', _)).
+inCompetent('192.168.1.3_victim').
+hasAccount('192.168.1.3_victim', '192.168.1.3', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.3', _)).
+hacl(_,_,_,_).

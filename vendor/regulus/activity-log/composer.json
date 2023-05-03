@@ -1,0 +1,23 @@
+{
+	"name": "regulus/activity-log",
+	"description": "A clean and simple Laravel 5 activity logger for monitoring user activity on a website or web application.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cody Jassman",
+			"email": "me@codyjassman.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"laravel/framework": ">=5.2.0",
+
+		"regulus/tetra-text": "0.6.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Regulus\\ActivityLog\\": "src/",
+			"Regulus\\TetraText\\": "src/"
+		}
+	}
+}

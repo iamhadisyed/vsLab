@@ -1,0 +1,872 @@
+{
+  "scan": {
+    "time": 1492067154,
+    "type": "nmap -A -O -oX output.xml 192.168.1.1 192.168.1.12 192.168.1.14 192.168.1.16 192.168.1.2 192.168.1.3 192.168.1.4 192.168.1.5 192.168.1.6 192.168.1.8 192.168.1.9"
+  },
+  "enhanced": {
+    "time": 1492067154
+  },
+  "systems": [
+    {
+      "services": [],
+      "mac": "FA:16:3E:C3:13:44",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.1",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:vsftpd:vsftpd:2.3.4",
+          "name": "ftp",
+          "state": "open",
+          "port": 21,
+          "reason": "syn-ack",
+          "banner": "product: vsftpd version: 2.3.4 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:4.7p1",
+          "name": "ssh",
+          "state": "open",
+          "port": 22,
+          "reason": "syn-ack",
+          "banner": "product: OpenSSH version: 4.7p1 Debian 8ubuntu1 extrainfo: protocol 2.0 ostype: Linux",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-0166"
+            },
+            {
+              "cveid": "CVE-2008-5161"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:linux:linux_kernel",
+          "name": "telnet",
+          "state": "open",
+          "port": 23,
+          "reason": "syn-ack",
+          "banner": "product: Linux telnetd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postfix:postfix",
+          "name": "smtp",
+          "state": "open",
+          "port": 25,
+          "reason": "syn-ack",
+          "banner": "product: Postfix smtpd hostname:  metasploitable.localdomain",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2013-2566"
+            },
+            {
+              "cveid": "CVE-2007-1858"
+            },
+            {
+              "cveid": "CVE-2008-0166"
+            },
+            {
+              "cveid": "CVE-2011-0411"
+            },
+            {
+              "cveid": "CVE-2011-1430"
+            },
+            {
+              "cveid": "CVE-2011-1431"
+            },
+            {
+              "cveid": "CVE-2011-1432"
+            },
+            {
+              "cveid": "CVE-2011-1506"
+            },
+            {
+              "cveid": "CVE-2011-2165"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:isc:bind:9.4.2",
+          "name": "domain",
+          "state": "open",
+          "port": 53,
+          "reason": "syn-ack",
+          "banner": "product: ISC BIND version: 9.4.2",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-1447"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.2.8",
+          "name": "http",
+          "state": "open",
+          "port": 80,
+          "reason": "syn-ack",
+          "banner": "product: Apache httpd version: 2.2.8 extrainfo: (Ubuntu) DAV/2",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2012-0053"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "name": "rpcbind",
+          "state": "open",
+          "port": 111,
+          "reason": "syn-ack",
+          "banner": "version: 2 extrainfo: RPC #100000",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "name": "netbios-ssn",
+          "state": "open",
+          "port": 139,
+          "reason": "syn-ack",
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "name": "netbios-ssn",
+          "state": "open",
+          "port": 445,
+          "reason": "syn-ack",
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:netkit:netkit",
+          "name": "exec",
+          "state": "open",
+          "port": 512,
+          "reason": "syn-ack",
+          "banner": "product: netkit-rsh rexecd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "login",
+          "state": "open",
+          "port": 513,
+          "reason": "syn-ack",
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "tcpwrapped",
+          "state": "open",
+          "port": 514,
+          "reason": "syn-ack",
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "java-rmi",
+          "state": "open",
+          "port": 1099,
+          "reason": "syn-ack",
+          "banner": "product: Java RMI Registry hostname: localhost",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "shell",
+          "state": "open",
+          "port": 1524,
+          "reason": "syn-ack",
+          "banner": "product: Metasploitable root shell",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "nfs",
+          "state": "open",
+          "port": 2049,
+          "reason": "syn-ack",
+          "banner": "version: 2-4 extrainfo: RPC #100003",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-1999-0170"
+            },
+            {
+              "cveid": "CVE-1999-0211"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:proftpd:proftpd:1.3.1",
+          "name": "ftp",
+          "state": "open",
+          "port": 2121,
+          "reason": "syn-ack",
+          "banner": "product: ProFTPD version: 1.3.1 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:mysql:mysql:5.0.51a-3ubuntu5",
+          "name": "mysql",
+          "state": "open",
+          "port": 3306,
+          "reason": "syn-ack",
+          "banner": "product: MySQL version: 5.0.51a-3ubuntu5",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postgresql:postgresql:8.3",
+          "name": "postgresql",
+          "state": "open",
+          "port": 5432,
+          "reason": "syn-ack",
+          "banner": "product: PostgreSQL DB version: 8.3.0 - 8.3.7",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "vnc",
+          "state": "open",
+          "port": 5900,
+          "reason": "syn-ack",
+          "banner": "product: VNC extrainfo: protocol 3.3",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "X11",
+          "state": "open",
+          "port": 6000,
+          "reason": "syn-ack",
+          "banner": "extrainfo: access denied",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:unrealircd:unrealircd",
+          "name": "irc",
+          "state": "open",
+          "port": 6667,
+          "reason": "syn-ack",
+          "banner": "product: Unreal ircd hostname: irc.Metasploitable.LAN",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2010-2075"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "name": "ajp13",
+          "state": "open",
+          "port": 8009,
+          "reason": "syn-ack",
+          "banner": "product: Apache Jserv extrainfo: Protocol v1.3",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:coyote_http_connector:1.1",
+          "name": "http",
+          "state": "open",
+          "port": 8180,
+          "reason": "syn-ack",
+          "banner": "product: Apache Tomcat/Coyote JSP engine version: 1.1",
+          "vulnerabilities": []
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:F4:79:10",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.12",
+      "hostnames": []
+    },
+    {
+      "services": [],
+      "mac": "FA:16:3E:FD:0C:CE",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.16",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:thekelleys:dnsmasq:2.76",
+          "name": "domain",
+          "state": "open",
+          "port": 53,
+          "reason": "syn-ack",
+          "banner": "product: dnsmasq version: 2.76",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:python:basehttpserver",
+          "name": "http",
+          "state": "open",
+          "port": 80,
+          "reason": "syn-ack",
+          "banner": "product: BaseHTTPServer",
+          "vulnerabilities": []
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:E9:6D:B0",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.2",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "name": "ssh",
+          "state": "closed",
+          "port": 22,
+          "reason": "reset",
+          "banner": "",
+          "vulnerabilities": []
+        }
+      ],
+      "mac": "FA:16:3E:BD:CF:F1",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.3",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.4.18",
+          "name": "http",
+          "state": "open",
+          "port": 80,
+          "reason": "syn-ack",
+          "banner": "product: Apache httpd version: 2.4.18 extrainfo: (Ubuntu)",
+          "vulnerabilities": []
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:07:7D:DA",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.4",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:vsftpd:vsftpd:2.3.4",
+          "name": "ftp",
+          "state": "open",
+          "port": 21,
+          "reason": "syn-ack",
+          "banner": "product: vsftpd version: 2.3.4 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:4.7p1",
+          "name": "ssh",
+          "state": "open",
+          "port": 22,
+          "reason": "syn-ack",
+          "banner": "product: OpenSSH version: 4.7p1 Debian 8ubuntu1 extrainfo: protocol 2.0 ostype: Linux",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-0166"
+            },
+            {
+              "cveid": "CVE-2008-5161"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:linux:linux_kernel",
+          "name": "telnet",
+          "state": "open",
+          "port": 23,
+          "reason": "syn-ack",
+          "banner": "product: Linux telnetd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postfix:postfix",
+          "name": "smtp",
+          "state": "open",
+          "port": 25,
+          "reason": "syn-ack",
+          "banner": "product: Postfix smtpd hostname:  metasploitable.localdomain",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2013-2566"
+            },
+            {
+              "cveid": "CVE-2007-1858"
+            },
+            {
+              "cveid": "CVE-2008-0166"
+            },
+            {
+              "cveid": "CVE-2011-0411"
+            },
+            {
+              "cveid": "CVE-2011-1430"
+            },
+            {
+              "cveid": "CVE-2011-1431"
+            },
+            {
+              "cveid": "CVE-2011-1432"
+            },
+            {
+              "cveid": "CVE-2011-1506"
+            },
+            {
+              "cveid": "CVE-2011-2165"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:isc:bind:9.4.2",
+          "name": "domain",
+          "state": "open",
+          "port": 53,
+          "reason": "syn-ack",
+          "banner": "product: ISC BIND version: 9.4.2",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-1447"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.2.8",
+          "name": "http",
+          "state": "open",
+          "port": 80,
+          "reason": "syn-ack",
+          "banner": "product: Apache httpd version: 2.2.8 extrainfo: (Ubuntu) DAV/2",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2012-0053"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "name": "rpcbind",
+          "state": "open",
+          "port": 111,
+          "reason": "syn-ack",
+          "banner": "version: 2 extrainfo: RPC #100000",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "name": "netbios-ssn",
+          "state": "open",
+          "port": 139,
+          "reason": "syn-ack",
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:samba:samba:3",
+          "name": "netbios-ssn",
+          "state": "open",
+          "port": 445,
+          "reason": "syn-ack",
+          "banner": "product: Samba smbd version: 3.X extrainfo: workgroup: WORKGROUP",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:netkit:netkit",
+          "name": "exec",
+          "state": "open",
+          "port": 512,
+          "reason": "syn-ack",
+          "banner": "product: netkit-rsh rexecd ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "login",
+          "state": "open",
+          "port": 513,
+          "reason": "syn-ack",
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "tcpwrapped",
+          "state": "open",
+          "port": 514,
+          "reason": "syn-ack",
+          "banner": "",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "java-rmi",
+          "state": "open",
+          "port": 1099,
+          "reason": "syn-ack",
+          "banner": "product: Java RMI Registry hostname: localhost",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "shell",
+          "state": "open",
+          "port": 1524,
+          "reason": "syn-ack",
+          "banner": "product: Metasploitable root shell",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "nfs",
+          "state": "open",
+          "port": 2049,
+          "reason": "syn-ack",
+          "banner": "version: 2-4 extrainfo: RPC #100003",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-1999-0170"
+            },
+            {
+              "cveid": "CVE-1999-0211"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:proftpd:proftpd:1.3.1",
+          "name": "ftp",
+          "state": "open",
+          "port": 2121,
+          "reason": "syn-ack",
+          "banner": "product: ProFTPD version: 1.3.1 ostype: Unix",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:mysql:mysql:5.0.51a-3ubuntu5",
+          "name": "mysql",
+          "state": "open",
+          "port": 3306,
+          "reason": "syn-ack",
+          "banner": "product: MySQL version: 5.0.51a-3ubuntu5",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:postgresql:postgresql:8.3",
+          "name": "postgresql",
+          "state": "open",
+          "port": 5432,
+          "reason": "syn-ack",
+          "banner": "product: PostgreSQL DB version: 8.3.0 - 8.3.7",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "vnc",
+          "state": "open",
+          "port": 5900,
+          "reason": "syn-ack",
+          "banner": "product: VNC extrainfo: protocol 3.3",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "name": "X11",
+          "state": "open",
+          "port": 6000,
+          "reason": "syn-ack",
+          "banner": "extrainfo: access denied",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:unrealircd:unrealircd",
+          "name": "irc",
+          "state": "open",
+          "port": 6667,
+          "reason": "syn-ack",
+          "banner": "product: Unreal ircd hostname: irc.Metasploitable.LAN",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2010-2075"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "name": "ajp13",
+          "state": "open",
+          "port": 8009,
+          "reason": "syn-ack",
+          "banner": "product: Apache Jserv extrainfo: Protocol v1.3",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:coyote_http_connector:1.1",
+          "name": "http",
+          "state": "open",
+          "port": 8180,
+          "reason": "syn-ack",
+          "banner": "product: Apache Tomcat/Coyote JSP engine version: 1.1",
+          "vulnerabilities": []
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:3E:88:6F",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.5",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:6.6.1",
+          "name": "ssh",
+          "state": "open",
+          "port": 22,
+          "reason": "syn-ack",
+          "banner": "product: OpenSSH version: 6.6.1 extrainfo: protocol 2.0",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2008-5161"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:redhat:cockpit",
+          "name": "http",
+          "state": "open",
+          "port": 9090,
+          "reason": "syn-ack",
+          "banner": "product: Cockpit management console ostype: Linux",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2013-2566"
+            }
+          ]
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:B1:11:55",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.6",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 135,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows_98",
+          "name": "netbios-ssn",
+          "state": "open",
+          "port": 139,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows 98 netbios-ssn ostype: Windows 98",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows_10",
+          "name": "microsoft-ds",
+          "state": "open",
+          "port": 445,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows 10 microsoft-ds ostype: Windows 10",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49152,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49153,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49154,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49155,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49156,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/o:microsoft:windows",
+          "name": "msrpc",
+          "state": "open",
+          "port": 49157,
+          "reason": "syn-ack",
+          "banner": "product: Microsoft Windows RPC ostype: Windows",
+          "vulnerabilities": []
+        }
+      ],
+      "cpes": [],
+      "mac": "FA:16:3E:0A:FD:22",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.8",
+      "hostnames": []
+    },
+    {
+      "services": [],
+      "mac": "FA:16:3E:1F:60:05",
+      "status": "up",
+      "distance": 1,
+      "vendor": "",
+      "ip": "192.168.1.9",
+      "hostnames": []
+    },
+    {
+      "services": [
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:openbsd:openssh:7.2p2",
+          "name": "ssh",
+          "state": "open",
+          "port": 22,
+          "reason": "syn-ack",
+          "banner": "product: OpenSSH version: 7.2p2 Ubuntu 4ubuntu2.1 extrainfo: Ubuntu Linux; protocol 2.0 ostype: Linux",
+          "vulnerabilities": []
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.4.18",
+          "name": "http",
+          "state": "open",
+          "port": 80,
+          "reason": "syn-ack",
+          "banner": "product: Apache httpd version: 2.4.18 hostname: scanserver.mobisphere.asu.edu",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2001-0731"
+            }
+          ]
+        },
+        {
+          "protocol": "tcp",
+          "cpe": "cpe:/a:apache:http_server:2.4.18",
+          "name": "http",
+          "state": "open",
+          "port": 443,
+          "reason": "syn-ack",
+          "banner": "product: Apache httpd version: 2.4.18 hostname: 192.168.1.14",
+          "vulnerabilities": [
+            {
+              "cveid": "CVE-2001-0731"
+            }
+          ]
+        }
+      ],
+      "cpes": [],
+      "mac": "",
+      "status": "up",
+      "distance": 0,
+      "vendor": "",
+      "ip": "192.168.1.14",
+      "hostnames": [
+        "scanserver"
+      ]
+    }
+  ]
+}

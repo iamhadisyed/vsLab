@@ -1,0 +1,25 @@
+{
+	"name": "regulus/tetra-text",
+	"description": "A small text/string formatting composer package for Laravel 5 that formats numeric values, money values, phone numbers, and more.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cody Jassman",
+			"email": "me@codyjassman.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"laravel/framework": ">=5.0.0",
+
+		"ezyang/htmlpurifier": ">=4.8.0"
+	},
+	"autoload": {
+		"files": [
+			"src/helpers.php"
+		],
+		"psr-4": {
+			"Regulus\\TetraText\\": "src/"
+		}
+	}
+}

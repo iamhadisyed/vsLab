@@ -1,0 +1,2 @@
+<a class="btn btn-xs btn-primary" href="/permissions/{{$id}}/edit">Edit</a>
+<button class="btn btn-xs btn-danger" onclick="Swal('', 'Permission {{$name}} cannot be deleted!', 'warning')">Delete</button>

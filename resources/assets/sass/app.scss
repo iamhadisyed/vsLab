@@ -1,0 +1,35 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Ionicons
+@import "../../../node_modules/ionicons/dist/scss/ionicons.scss";
+
+//Font awesome
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+
+//DataTable Button
+@import "../../../node_modules/datatables.net-bs/css/dataTables.bootstrap";
+
+//Jquery-UI progressbar
+@import '~jquery-ui/themes/base/all.css';
+@import '~jquery-ui-dist/jquery-ui.css';
+@import '~jquery-ui-multiselect-widget/jquery.multiselect.css';
+@import '~jquery-ui-multiselect-widget/jquery.multiselect.filter.css';
+@import '~jquery-datetimepicker/jquery.datetimepicker.css';
+
+@import '~bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css';
+@import '~sweetalert2/src/sweetalert2.scss';
+@import '~tooltipster/dist/css/tooltipster.bundle.css';
+
+.buttons-container {
+  margin-bottom: 15px;
+  & .dt-buttons {
+    float: right;
+  }
+}

@@ -1,0 +1,153 @@
+/*----- Tabs -----*/
+/*.tabs {*/
+    /*width:100%;*/
+    /*display:inline-block;*/
+/*}*/
+
+/*----- Tab Links -----*/
+ /*Clearfix*/
+/*.tab-links:after {*/
+    /*display:block;*/
+    /*clear:both;*/
+    /*content:'';*/
+/*}*/
+
+/*.tab-links li {*/
+    /*margin: 0px 5px;*/
+    /*float: left;*/
+    /*list-style: none;*/
+/*}*/
+
+/*.tab-links a {*/
+    /*padding:9px 15px;*/
+    /*display:inline-block;*/
+    /*border-radius:3px 3px 0px 0px;*/
+    /*background: #7FB5DA;*/
+    /*font-size:12px;*/
+    /*font-weight:600;*/
+    /*color:#4c4c4c;*/
+    /*transition:all linear 0.15s;*/
+/*}*/
+
+/*.tab-links a:hover {*/
+    /*background:#a7cce5;*/
+    /*text-decoration:none;*/
+/*}*/
+
+/*li.active a, li.active a:hover {*/
+    /*background:#fff;*/
+    /*color:#4c4c4c;*/
+/*}*/
+
+/*----- Content of Tabs -----*/
+/*.tab-content {*/
+    /*padding:15px;*/
+    /*border-radius:3px;*/
+    /*box-shadow:-1px 1px 1px rgba(0,0,0,0.15);*/
+    /*background:#fff;*/
+/*}*/
+
+/*.tab {*/
+    /*display:none;*/
+/*}*/
+
+/*.tab.active {*/
+    /*display:block;*/
+/*}*/
+
+.btn-tooltip {
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-size: 24px 24px;
+    border: none;
+    margin: 2px;
+}
+
+.btn-tooltip.get-console {
+    background-image: url('../images/icons/Terminal-icon_32.png');
+}
+
+.btn-tooltip.vm-restart {
+    background-image: url('../images/icons/Windows-Restart-icon-32.png');
+}
+
+.btn-tooltip.vm-rebuild {
+    background-image: url('../images/icons/Rebuild-icon-32.png');
+}
+
+.btn-tooltip.vm-shutdown {
+    background-image: url('../images/icons/Windows-Turn-Off-icon-32.png');
+}
+
+.btn-tooltip.vm-start {
+    background-image: url('../images/icons/Poweron-icon-32.png');
+}
+
+.btn-tooltip.vm-suspend {
+    background-image: url('../images/icons/Suspend-icon-32.png');
+}
+
+.btn-tooltip.vm-resume {
+    background-image: url('../images/icons/Resume-icon-32.png');
+}
+
+.btn-tooltip.vm-info {
+    background-image: url('../images/icons/Info-icon-32.png');
+}
+
+.progress_bar {
+    width: 50px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/waiting.gif');
+}
+
+.lab_content_heading {
+    font-size: 18px;
+    color: #000066;
+    font-weight: bold;
+    margin : 8px;
+    -khtml-user-select: text;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+
+.lab_content {
+    font-size: 12px;
+    color: #000000;
+    font-weight: normal;
+}
+
+/* Log Search */
+
+div.es label {
+  width: 6em;
+  padding: 0.8em;
+  display: inline-block;
+  //background-color: yellow;
+}
+
+div.es label.es_first_label {
+  //background-color: orange;
+  padding: 0.8em;
+  display: inline-block;
+  width: 10em;
+}
+
+
+div.es span {
+  display: inline-block;
+  width: 10em;
+}
+
+div.es span.es select {
+  max-width: 100%;
+}
+
+div.es button#es_execute_search {
+  margin-top: 0.8em;
+}
+
